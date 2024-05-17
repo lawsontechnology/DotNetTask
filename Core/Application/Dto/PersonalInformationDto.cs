@@ -1,0 +1,32 @@
+﻿using ApplicationFormTask.Core.Domain.Enum;
+
+namespace ApplicationFormTask.Core.Application.Dto
+{
+    public class PersonalInformationDto
+    {
+        public string Id { get; set; } = default!;
+        public string FirstName { get; set; } = default!;
+        public string LastName { get; set; } = default!;
+        public string Email { get; set; } = default!;
+        public string PhoneNumber { get; set; } = default!;
+        public string Nationality { get; set; } = default!;
+        public string CurrentResidence { get; set; } = default!;
+        public string IDNumber { get; set; } = default!;
+        public DateOnly DOB { get; set; }
+        public string? Gender { get; set; }
+        public string? QuestionTypeToAnswer { get; set; }
+    }
+    public class PersonalInformationRequestModel
+    {
+        public string FirstName { get; set; } = default!;
+        public string LastName { get; set; } = default!;
+        public string Email { get; set; } = default!;
+        public string PhoneNumber { get; set; } = default!;
+        public string Nationality { get; set; } = default!;
+        public string CurrentResidence { get; set; } = default!;
+        public string IDNumber { get; set; } = default!;
+        public DateOnly DOB { get; set; }
+        public Gender Gender { get; set; }
+        public QuestionType QuestionTypeToAnswer { get; set; }
+    }
+}
